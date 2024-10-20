@@ -15,4 +15,10 @@ class Solution(object):
                 freq_to_nums[freq] = []
             freq_to_nums[freq].append(num)
 
-        return [num for freq in sorted(freq_to_nums.keys(), reverse=True) for num in freq_to_nums[freq]][:k]
+        result = []
+        for freq in sorted(freq_to_nums.keys(), reverse=True):
+            result.extend(freq_to_nums[freq])
+            if k <= len(result):
+                break
+
+        return result[:k]
