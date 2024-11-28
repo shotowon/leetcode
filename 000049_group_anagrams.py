@@ -7,7 +7,7 @@ class Solution(object):
         anagram_lists = {}
 
         for str in strs:
-            sorted_str = ''.join(sorted(str))
+            sorted_str = "".join(sorted(str))
             if sorted_str in anagram_lists:
                 anagram_lists[sorted_str].append(str)
                 continue

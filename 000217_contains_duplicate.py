@@ -9,5 +9,5 @@ class Solution(object):
             if num in map:
                 return True
             map[num] = num
-            
+
         return False

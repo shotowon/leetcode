@@ -1,5 +1,6 @@
 # PYTHON 3 SOLUTION
 
+
 class Solution(object):
     def evalRPN(self, tokens):
         """
@@ -7,7 +8,7 @@ class Solution(object):
         :rtype: int
         """
         eval_values = []
-        for token in tokens:        
+        for token in tokens:
             if token == "+":
                 b, a = eval_values.pop(), eval_values.pop()
                 eval_values.append(a + b)

@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
@@ -16,7 +17,7 @@ class Solution:
                 elif sum < 0:
                     l += 1
                 else:
-                    result.append([a, nums[l], nums[r]]) 
+                    result.append([a, nums[l], nums[r]])
                     l += 1
                     r -= 1
                     while l < r and nums[l] == nums[l - 1]:

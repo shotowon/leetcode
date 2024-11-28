@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: List[int]
         """
         cached = {}
-        
+
         for i, num in enumerate(nums):
             if target - num in cached:
                 return [cached[target - num], i]

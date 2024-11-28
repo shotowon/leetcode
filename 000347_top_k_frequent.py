@@ -9,7 +9,7 @@ class Solution(object):
         for num in nums:
             freqs[num] = freqs.setdefault(num, 0) + 1
 
-        freq_to_nums = {} 
+        freq_to_nums = {}
         for num, freq in freqs.items():
             if freq not in freq_to_nums:
                 freq_to_nums[freq] = []
